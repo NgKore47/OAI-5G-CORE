@@ -3,6 +3,8 @@
 * Suitable Docker-compose version for deploying `docker-compose-basic-nrf.yaml` file
 * For PLMN 00101, do [these](#in-oai-5g-core-we-have-to-configure-the-following-files) changes first.
 
+## Nework Architecture
+![oai](./images/OAI-5g-Core.png)
 ## Deployment:
 ```bash
 cd ~/OAI-5G-CORE/docker-compose/
