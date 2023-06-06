@@ -1,5 +1,13 @@
 # OAI-5G-CORE
+## Prerequisite:
+* Suitable Docker-compose version for deploying `docker-compose-basic-nrf.yaml` file
+* For PLMN 00101, do [these](#in-oai-5g-core-we-have-to-configure-the-following-files) changes first.
 
+## Deployment:
+```bash
+cd ~/OAI-5G-CORE/docker-compose/
+docker-compose -f docker-compose-basic-nrf.yaml up -d
+```
 #### In OAI-5G-CORE, we have to configure the following files:
 - `/docker-compose/docker-compose-basic-nrf.yaml`
 	- changing the version of images from `v1.4.0 --> develop`
