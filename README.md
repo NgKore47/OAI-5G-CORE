@@ -16,20 +16,20 @@ docker-compose --version
 ```
 
 
-* For PLMN 00101, do [these](#in-oai-5g-core-we-have-to-configure-the-following-files) changes first.
+* For PLMN 00101, do [these](#in-oai-5g-core-we-have-to-configure-the-following-files) changes first:
 
 #### In OAI-5G-CORE, we have to configure the following files:
 - `/docker-compose/docker-compose-basic-nrf.yaml`
-	- changing the version of images from `v1.4.0 --> develop`
+	- changing the version of images from `v1.5.0 --> develop`
 	- ***changing MCC, MNC, SD, SST, TAC*** --> setting `MCC=001` and `MNC=01` is important.
 	- ***adding Integrity/ciphering algorithms:*** `INT_ALGO_LIST` and `CIPH_ALGO_LIST` to secure the communication/(user data and signaling messages) between the UE and the 5G Core network.
 	- changing default DNS
 - `/docker-compose/docker-compose-basic-vpp-nrf.yaml`
-	- changing the version of images from `v1.4.0 --> develop`
+	- changing the version of images from `v1.5.0 --> develop`
 
 
 ## Nework Architecture
-![oai](./images/OAI-5g-Core.png)
+![oai](./docs/OAI-5g-Core.png)
 
 ## Deployment:
 ```bash
